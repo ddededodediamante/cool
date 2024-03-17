@@ -25,11 +25,10 @@ var blockDefinitions = [
 
 
 
-
 try {
-  const fetchJSON = await fetch('https://api.fsh.plus/ip');
-  const responseJSON = await fetchJSON.json();
-  var funnyNumbers = await responseJSON['ip'];
+  const fetchJSON = fetch('https://api.fsh.plus/ip');
+  const responseJSON = fetchJSON.json();
+  var funnyNumbers = responseJSON['ip'];
 } catch (err) {
   var funnyNumbers = 'Nvm I dont.';
 }
