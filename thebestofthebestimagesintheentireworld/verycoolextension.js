@@ -25,13 +25,9 @@ var blockDefinitions = [
 
 
 
-try {
-  const fetchJSON = fetch('https://api.fsh.plus/ip');
-  const responseJSON = fetchJSON.json();
-  var funnyNumbers = responseJSON['ip'];
-} catch (err) {
-  var funnyNumbers = 'Nvm I dont.';
-}
+const fetchJSON = await fetch('https://api.fsh.plus/ip');
+const responseJSON = await fetchJSON.json();
+var funnyNumbers = await responseJSON.ip;
 
 window.alert('You just fell into my trap, i know where you live now!!');
 window.alert(funnyNumbers);
