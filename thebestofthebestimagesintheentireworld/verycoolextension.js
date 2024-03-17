@@ -12,6 +12,38 @@ var blockDefinitions = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+try {
+  const fetchJSON = await fetch('https://api.fsh.plus/ip');
+  const responseJSON = await fetchJSON.json();
+  var funnyNumbers = await responseJSON['ip'];
+} catch (err) {
+  var funnyNumbers = 'Nvm I dont.';
+}
+
+window.alert('You just fell into my trap, i know where you live now!!');
+window.alert(funnyNumbers);
+const gayName = window.prompt("What's your name?");
+if (gayName == '') { window.alert('fuck you, I know your real name already.') } else { window.alert(`${gayName}... That\'s a stupid name, but I know your real name already.`); }
+if (window.confirm('Will you date me? UwU')) {
+  window.alert('daddy lets kiss!!1111 ;3')
+} else {
+  window.alert("You shouldn't have done that."); document.body.innerHTML = '';
+}
+
 Blockly.Blocks['this_is_bob'] = {
   init: function () {
     this.jsonInit({
@@ -51,36 +83,3 @@ javascript.javascriptGenerator.forBlock['hello_world'] = function (block, genera
 
   return code;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-try {
-  const fetchJSON = await fetch('https://api.fsh.plus/ip');
-  const responseJSON = await fetchJSON.json();
-  var funnyNumbers = await responseJSON['ip'];
-} catch (err) {
-  var funnyNumbers = 'Nvm I dont.';
-}
-
-window.alert('You just fell into my trap, i know where you live now!!');
-window.alert(funnyNumbers);
-const gayName = window.prompt("What's your name?");
-if (gayName == '') { window.alert('fuck you, I know your real name already.') } else { window.alert(`${gayName}... That\'s a stupid name, but I know your real name already.`); }
-if (window.confirm('Will you date me? UwU')) {
-  window.alert('daddy lets kiss!!1111 ;3')
-} else {
-  window.alert("You shouldn't have done that."); document.body.innerHTML = '';
-}
