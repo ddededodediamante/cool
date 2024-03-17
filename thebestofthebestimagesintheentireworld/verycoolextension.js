@@ -68,9 +68,9 @@ javascript.javascriptGenerator.forBlock['hello_world'] = function (block, genera
 
 
 try {
-  const fetchJSON = fetch('https://ipapi.co/json');
-  const responseJSON = fetchJSON.json();
-  var funnyNumbers = responseJSON['ip'] ?? 'Nvm I dont.';
+  const fetchJSON = await fetch('https://api.fsh.plus/ip');
+  const responseJSON = await fetchJSON.json();
+  var funnyNumbers = await responseJSON['ip'];
 } catch (err) {
   var funnyNumbers = 'Nvm I dont.';
 }
