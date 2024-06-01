@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About ddededodediamante">
+
     <title>ddededodediamante</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-
-        #dde {
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
-<body>
-    <h1 id="dde" onclick="clickTitle()">I'm ddededodediamante</h1>
 
-    <script>
-        function clickTitle() {
-            window.location.pathname = '/s3fgr/';
-        }
-    </script>
+<body>
+    <div id="toolbar">
+        <a href="/" class="toolbar-button">
+            Main Page
+        </a>
+        <a href="/games/" class="toolbar-button">
+            My Games
+        </a>
+    </div>
+
+    <h1>I'm ddededodediamante!</h1>
+
+    <img src="./icons/ddededodediamante.png" id="ddededodediamante">
+
+    <div id="bioDiv">
+        <h1>About me</h1>
+        <p>I'm ddededodediamante<br>I like to make and play games</p>
+    </div>
+
+    <div id="buttonHolder">
+        <a href="https://scratch.mit.edu/users/LucasXD5/" target="_blank" class="social-button">
+            <img src="./icons/scratch.svg" alt="Scratch">
+        </a>
+        <a href="https://www.youtube.com/@ddededodediamante/" target="_blank" class="social-button">
+            <img src="./icons/youtube.svg" alt="Youtube">
+        </a>
+        <a href="https://github.com/ddededodediamante/" target="_blank" class="social-button">
+            <img src="./icons/github.svg" alt="Github">
+        </a>
+        <a href="https://twitter.com/ddededodediaman/" target="_blank" class="social-button">
+            <img src="./icons/twitter.svg" alt="Twitter">
+        </a>
+        <a href="https://www.roblox.com/users/1279272100/profile/" target="_blank" class="social-button">
+            <img src="./icons/roblox.svg" alt="Roblox">
+        </a>
+    </div>
+
+    <div id="infoHolder">
+        <div class="informationDiv">
+            <h2>Top Languages</h2>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ddededodediamante">
+        </div>
+        <div class="informationDiv">
+            <h2>Github Stats</h2>
+            <img src="https://github-readme-stats.vercel.app/api?username=ddededodediamante">
+        </div>
+    </div>
 </body>
+
 </html>
