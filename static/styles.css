@@ -114,6 +114,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .informationDiv {
@@ -140,4 +141,27 @@ body {
     padding: 10px;
     margin: 0px;
     border-radius: 10px;
+}
+
+#webring {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #f0f0f0;
+    padding: 7px;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+#webring div {
+    border: 2px solid #f0f0f0;
+    padding: 3px;
+    border-radius: 10px;
+    min-width: 100px;
+    transition: all 0.2s ease;
+    height: 100%;
+}
+
+#webring div:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 0px 10px rgb(77, 77, 77);
 }
