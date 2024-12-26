@@ -1,84 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="I'm ddededodediamante!" />
+    <meta name="author" content="ddededodediamante" />
+    <meta name="keywords" content="ddededodediamante, bio, games, dde" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I'm ddededodediamante!">
-    <meta name="author" content="ddededodediamante">
-    <meta name="keywords" content="ddededodediamante, bio, games, dde">
-
-    <meta property="og:title" content="ddededodediamante">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ddededodediamante.vercel.app/">
-    <meta property="og:image" content="https://ddededodediamante.vercel.app/src/icons/ddededodediamante.png">
-    <meta property="og:description" content="I'm ddededodediamante!">
+    <meta property="og:title" content="ddededodediamante" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/src/icons/ddededodediamante_new.png" />
+    <meta property="og:description" content="I'm ddededodediamante!" />
 
     <title>ddededodediamante</title>
-    <link rel="stylesheet" href="static/styles.css">
-</head>
 
-<body>
+    <link type="text/css" rel="stylesheet" href="static/styles.css" />
+  </head>
+
+  <body>
     <div id="toolbar">
-        <a href="/" class="toolbar-button">
-            Main Page
-        </a>
-        <a href="/games/" class="toolbar-button">
-            My Games
-        </a>
+      <a href="/"> Main Page </a>
+      <a href="/games.html"> Games </a>
+      <a href="/websites.html"> Websites </a>
+      <img src="src/icons/moon.svg" onclick="toggleDarkMode()" />
     </div>
 
     <h1>I'm ddededodediamante!</h1>
 
-    <img src="./src/icons/ddededodediamante.png" id="ddededodediamante">
+    <img src="./src/icons/ddededodediamante_new.png" id="ddededodediamante" />
 
     <div id="bioDiv">
-        <h1>About me</h1>
-        <p>I'm ddededodediamante<br>I like to make and play games</p>
+      <h1>About me</h1>
+      <p>
+        I'm ddededodediamante!<br />I play and make games, mobile or computer<br />I
+        can speak Spanish and english, and I'm learning German
+      </p>
     </div>
 
     <div id="buttonHolder">
-        <a href="https://scratch.mit.edu/users/LucasXD5/" target="_blank" class="social-button">
-            <img src="./src/icons/scratch.svg" alt="Scratch">
-        </a>
-        <a href="https://www.youtube.com/@ddededodediamante/" target="_blank" class="social-button">
-            <img src="./src/icons/youtube.svg" alt="Youtube">
-        </a>
-        <a href="https://github.com/ddededodediamante/" target="_blank" class="social-button">
-            <img src="./src/icons/github.svg" alt="Github">
-        </a>
-        <a href="https://twitter.com/ddededodediaman/" target="_blank" class="social-button">
-            <img src="./src/icons/twitter.svg" alt="Twitter">
-        </a>
-        <a href="https://www.roblox.com/users/1279272100/profile/" target="_blank" class="social-button">
-            <img src="./src/icons/roblox.svg" alt="Roblox">
-        </a>
+      <a
+        href="https://scratch.mit.edu/users/LucasXD5/"
+        target="_blank"
+        class="social-button"
+      >
+        <img src="./src/icons/scratch.svg" alt="Scratch" />
+      </a>
+      <a
+        href="https://scratch.mit.edu/users/ddededodediamante/"
+        target="_blank"
+        class="social-button decorationTwo"
+      >
+        <img src="./src/icons/scratch.svg" alt="Scratch" />
+      </a>
+      <a
+        href="https://www.youtube.com/@ddededodediamante/"
+        target="_blank"
+        class="social-button"
+      >
+        <img src="./src/icons/youtube.svg" alt="Youtube" />
+      </a>
+      <a
+        href="https://github.com/ddededodediamante/"
+        target="_blank"
+        class="social-button"
+      >
+        <img
+          src="./src/icons/github.svg"
+          id="githubIconSocialButton"
+          alt="Github"
+        />
+      </a>
+      <a
+        href="https://twitter.com/ddededodediaman/"
+        target="_blank"
+        class="social-button"
+      >
+        <img src="./src/icons/twitter.svg" alt="Twitter" />
+      </a>
+      <a
+        href="https://www.roblox.com/users/1279272100/profile/"
+        target="_blank"
+        class="social-button"
+      >
+        <img src="./src/icons/roblox.svg" alt="Roblox" />
+      </a>
     </div>
 
     <div id="infoHolder">
-        <div class="informationDiv">
-            <h2>Top Languages</h2>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ddededodediamante">
-        </div>
-        <div class="informationDiv">
-            <h2>Github Stats</h2>
-            <img src="https://github-readme-stats.vercel.app/api?username=ddededodediamante">
-        </div>
+      <div class="informationDiv">
+        <h2>Top Languages</h2>
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=ddededodediamante"
+          id="githubTopLanguagesImg"
+        />
+      </div>
+      <div class="informationDiv">
+        <h2>Github Stats</h2>
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=ddededodediamante"
+          id="githubStatsImg"
+        />
+      </div>
     </div>
 
     <div id="webring">
-        <div>
-            <a href="https://steve0greatness.github.io/webring/sites/ddededodediamante/prev.xhtml">Previous</a>
-        </div>
-        <div>
-            <a href="https://steve0greatness.github.io/webring">
-                <img src="https://steve0greatness.github.io/webring/logo-dark-500.webp" width="200" height="84" />
-            </a>
-        </div>
-        <div>
-            <a href="https://steve0greatness.github.io/webring/sites/ddededodediamante/next.xhtml">Next</a>
-        </div>
+      <div>
+        <a
+          href="https://steve0greatness.github.io/webring/sites/ddededodediamante/prev.xhtml"
+          >Previous</a
+        >
+      </div>
+      <div>
+        <a href="https://steve0greatness.github.io/webring">
+          <img
+            src="https://steve0greatness.github.io/webring/logo-dark-500.webp"
+            width="125"
+            height="52"
+          />
+        </a>
+      </div>
+      <div href="index.html">
+        <a
+          href="https://steve0greatness.github.io/webring/sites/ddededodediamante/next.xhtml"
+          >Next</a
+        >
+      </div>
     </div>
-</body>
 
+    <script src="src/scripts/dynamicCss.js"></script>
+  </body>
 </html>

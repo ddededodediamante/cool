@@ -1,0 +1,114 @@
+/* Main CSS */
+
+body {
+  color: white;
+  background-color: #292929;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+#toolbar {
+  background-color: #202020;
+}
+
+#toolbar a,
+#toolbar img {
+  color: white;
+  border: 2px dashed rgba(127, 127, 127, 0.3);
+}
+
+#toolbar a:hover,
+#toolbar img:hover {
+  background-color: rgba(127, 127, 127, 0.3);
+}
+
+#toolbar img,
+img#githubIconSocialButton {
+  filter: invert(1);
+}
+
+.social-button {
+  background-color: #202020;
+}
+
+.social-button.decorationTwo::before {
+  color: #b8b8b8;
+}
+
+#ddededodediamante {
+  border-color: #202020;
+}
+
+#ddededodediamante:hover {
+  border-color: #d873aa;
+}
+
+.informationDiv {
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 10px;
+  animation: appear 0.5s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#bioDiv {
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+  animation: appear 0.5s;
+}
+
+#bioDiv p {
+  background-color: #292929;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+#webring {
+  display: flex;
+  flex-direction: row;
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 5px;
+  justify-content: center;
+  align-items: stretch;
+  animation: appear 0.5s;
+}
+
+#webring div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #292929;
+  border: 1px solid #202020;
+  padding: 4px;
+  border-radius: 10px;
+  font-size: x-large;
+  justify-content: center;
+  justify-items: center;
+  transition: transform 0.2s ease;
+}
+
+#webring div:hover {
+  transform: translateY(-2px);
+}
+
+/* Games CSS */
+
+.gameDiv {
+  background-color: #202020;
+}
+
+/* Websites CSS */
+
+.websiteInfoDiv {
+  background-color: #202020;
+  color: white;
+}
