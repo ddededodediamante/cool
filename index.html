@@ -25,19 +25,11 @@
       <img src="src/icons/moon.svg" onclick="toggleDarkMode()" />
     </div>
 
-    <h1>I'm ddededodediamante!</h1>
+    <h1>ddededodediamante</h1>
 
     <img src="./src/icons/ddededodediamante_new.png" id="ddededodediamante" />
 
-    <div id="bioDiv">
-      <h1>About me</h1>
-      <p>
-        I'm ddededodediamante!<br />I play and make games, mobile or computer<br />I
-        can speak Spanish and english, and I'm learning German
-      </p>
-    </div>
-
-    <div id="buttonHolder">
+    <div id="buttonHolder" class="hidden">
       <a
         href="https://scratch.mit.edu/users/LucasXD5/"
         target="_blank"
@@ -128,5 +120,12 @@
     </div>
 
     <script src="src/scripts/dynamicCss.js"></script>
+    <script>
+      let stuffShow = false;
+
+      document.getElementById('ddededodediamante').addEventListener('click', (ev) => {
+        stuffShow = true;
+      });
+    </script>
   </body>
 </html>

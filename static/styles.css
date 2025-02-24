@@ -14,7 +14,8 @@
 
 * {
   text-decoration: none;
-  font-family: "Comic Sans MS", "Comic Sans", Arial, Helvetica, sans-serif; /* sooo not ai */
+  font-family: "Comic Sans MS", "Comic Sans", Arial, Helvetica, sans-serif;
+  /* sooo not ai */
 }
 
 body {
@@ -156,32 +157,6 @@ a {
   flex-wrap: wrap;
 }
 
-#bioDiv {
-  background-color: #e4e4e4;
-  padding: 10px;
-  border-radius: 10px;
-  width: 600px;
-  box-sizing: border-box;
-  animation: appear 0.5s;
-}
-
-#bioDiv p {
-  background-color: #ffffff;
-  padding: 10px;
-  margin: 0px;
-  border-radius: 10px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-#bioDiv h1 {
-  padding: 0;
-  margin: 10px;
-}
-
 #webring {
   display: flex;
   flex-direction: row;
@@ -255,7 +230,7 @@ a {
 }
 
 .gameDiv img {
-  width: 400px;
+  width: auto;
   height: 300px;
   border-radius: 10px;
 }
