@@ -1,12 +1,8 @@
 /* Main CSS */
 
 body {
-  color: white;
-  background-color: #292929;
-}
-
-a {
-  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #50bbd6, #3f6ece);
+  color: #fff;
 }
 
 #toolbar {
@@ -34,7 +30,7 @@ img#githubIconSocialButton {
 }
 
 .social-button.decorationTwo::before {
-  color: #b8b8b8;
+  color: #ffffff80;
 }
 
 #ddededodediamante {
