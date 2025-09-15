@@ -1,0 +1,63 @@
+/* Main CSS */
+
+:root.dark {
+  color-scheme: dark;
+}
+
+:root.dark div#app {
+  background: linear-gradient(90deg, #50bbd6, #3f6ece);
+  color: white;
+}
+
+:root.dark .toolbar {
+  background-color: #202020;
+}
+
+:root.dark .toolbar a,
+:root.dark .toolbar img {
+  color: white;
+  border: 2px dashed rgba(127, 127, 127, 0.3);
+}
+
+:root.dark .toolbar a:hover,
+:root.dark .toolbar img:hover {
+  background-color: rgba(127, 127, 127, 0.3);
+}
+
+:root.dark .social-button {
+  background-color: #202020;
+}
+
+:root.dark .social-button.decorationTwo::before {
+  color: #ffffff80;
+}
+
+:root.dark #ddededodediamante {
+  border-color: #202020;
+}
+
+:root.dark #ddededodediamante:hover {
+  border-color: #d873aa;
+}
+
+:root.dark .informationDiv {
+  background-color: #202020;
+  color: #fff;
+}
+
+:root.dark #webring div {
+  background-color: #292929;
+}
+
+/* Games CSS */
+
+:root.dark .gameDiv {
+  background-color: #202020;
+}
+
+/* Websites CSS */
+
+:root.dark .websiteInfoDiv {
+  background-color: #202020;
+  color: white;
+}

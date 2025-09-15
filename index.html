@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -10,74 +10,15 @@
 
   <meta property="og:title" content="ddededodediamante" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="./src/icons/ddededodediamante_new.png" />
+  <meta property="og:image" content="./src/icons/ddededodediamante.png" />
   <meta property="og:description" content="I'm ddededodediamante!" />
 
   <title>ddededodediamante</title>
-
-  <link type="text/css" rel="stylesheet" href="static/styles.css" />
 </head>
 
 <body>
-  <div id="toolbar">
-    <a href="/"> Main Page </a>
-    <a href="/games.html"> Games </a>
-    <a href="/websites.html"> Websites </a>
-    <img src="src/icons/moon.svg" onclick="toggleDarkMode()" />
-  </div>
-
-  <h1>ddededodediamante</h1>
-
-  <img src="./src/icons/ddededodediamante_new.png" id="ddededodediamante" />
-
-  <div id="buttonHolder" class="hidden">
-    <a href="https://scratch.mit.edu/users/LucasXD5/" target="_blank" class="social-button">
-      <img src="./src/icons/scratch.svg" alt="Scratch" />
-    </a>
-    <a href="https://scratch.mit.edu/users/ddededodediamante/" target="_blank" class="social-button decorationTwo">
-      <img src="./src/icons/scratch.svg" alt="Scratch" />
-    </a>
-    <a href="https://www.youtube.com/@ddededodediamante/" target="_blank" class="social-button">
-      <img src="./src/icons/youtube.svg" alt="Youtube" />
-    </a>
-    <a href="https://github.com/ddededodediamante/" target="_blank" class="social-button">
-      <img src="./src/icons/github.svg" id="githubIconSocialButton" alt="Github" />
-    </a>
-    <a href="https://twitter.com/ddededodediaman/" target="_blank" class="social-button">
-      <img src="./src/icons/twitter.svg" alt="Twitter" />
-    </a>
-    <a href="https://www.roblox.com/users/1279272100/profile/" target="_blank" class="social-button">
-      <img src="./src/icons/roblox.svg" alt="Roblox" />
-    </a>
-  </div>
-
-  <div id="infoHolder">
-    <div class="informationDiv">
-      <h2>Top Languages</h2>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ddededodediamante"
-        id="githubTopLanguagesImg" />
-    </div>
-    <div class="informationDiv">
-      <h2>Github Stats</h2>
-      <img src="https://github-readme-stats.vercel.app/api?username=ddededodediamante" id="githubStatsImg" />
-    </div>
-  </div>
-
-  <div id="webring">
-    <div>
-      <a href="https://steve0greatness.github.io/webring/sites/ddededodediamante/prev.xhtml">Previous</a>
-    </div>
-    <div>
-      <a href="https://steve0greatness.github.io/webring">
-        <img src="https://steve0greatness.github.io/webring/logo-dark-500.webp" width="125" height="52" />
-      </a>
-    </div>
-    <div>
-      <a href="https://steve0greatness.github.io/webring/sites/ddededodediamante/next.xhtml">Next</a>
-    </div>
-  </div>
-
-  <script src="src/scripts/dynamicCss.js"></script>
+  <div id="app"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

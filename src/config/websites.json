@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://dde-ext-gallery.vercel.app/",
+    "icon": "/icons/ddededodediamante.png",
+    "name": "dde's Extension Gallery"
+  },
+  {
+    "url": "https://rarry.vercel.app/",
+    "icon": "https://rarry.vercel.app/icons/Rarry.svg",
+    "name": "Rarry"
+  },
+  {
+    "url": "https://ddechat.vercel.app/",
+    "icon": "https://ddechat.vercel.app/favicon.ico",
+    "name": "ddeChat"
+  },
+  {
+    "url": "https://block-creator.vercel.app/",
+    "icon": "https://block-creator.vercel.app/favicon.ico",
+    "name": "Block Creator"
+  }
+]
