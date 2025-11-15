@@ -27,14 +27,14 @@ export default function Home() {
         <div className="informationDiv">
           <h2>Top Languages</h2>
           <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=ddededodediamante"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=ddededodediamante&layout=compact&hide_title=true"
             id="githubTopLanguagesImg"
           />
         </div>
         <div className="informationDiv">
           <h2>Github Stats</h2>
           <img
-            src="https://github-readme-stats.vercel.app/api?username=ddededodediamante"
+            src="https://github-readme-stats.vercel.app/api?username=ddededodediamante&hide_title=true"
             id="githubStatsImg"
           />
         </div>

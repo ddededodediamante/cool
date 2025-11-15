@@ -1,18 +1,22 @@
 [
   {
     "url": "https://bbtgmoiatfi.vercel.app",
+    "title": "BBTGMOIATFI",
     "icon": "/icons/game_bbtgmoiatfi.png"
   },
   {
     "url": "https://projects.penguinmod.com/9902972982",
+    "title": "ddededodediamante Simulator V2",
     "icon": "/icons/game_ddesimv2.png"
   },
   {
     "url": "https://scratch.mit.edu/projects/719474163",
+    "title": "Physics Underground Platformer",
     "icon": "/icons/game_physicsplatformer.png"
   },
   {
     "url": "https://github.com/ddededodediamante/dot_dodge/releases",
+    "title": "Dot Dodge",
     "icon": "/icons/dot_dodge.png"
   }
 ]

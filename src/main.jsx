@@ -3,4 +3,4 @@ import { App } from "./App.jsx";
 import "./styles/index.css";
 import "./styles/dark.css";
 
-render(<App />, document.getElementById("app"));
+render(<App />, document.body);
