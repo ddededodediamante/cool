@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import Toolbar from "../../components/Toolbar";
 
 export default function Snake() {
   const canvasRef = useRef(null);
@@ -125,7 +124,6 @@ export default function Snake() {
 
   return (
     <>
-      <Toolbar />
       <canvas
         ref={canvasRef}
         width={400}
@@ -136,11 +134,9 @@ export default function Snake() {
           margin: "1rem auto",
         }}
       />
-      <div style={{ textAlign: "center" }}>
-        <button onClick={() => setRunning(!running)}>
-          {running ? "Stop" : "Start"}
-        </button>
-      </div>
+      <button onClick={() => setRunning(!running)}>
+        {running ? "Stop" : "Start"}
+      </button>
     </>
   );
 }

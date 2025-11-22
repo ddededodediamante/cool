@@ -1,11 +1,10 @@
-import Toolbar from "../components/Toolbar";
 import socials from "../config/socials.json";
+import programming from "../config/programming.json";
 
 export default function Home() {
   return (
     <>
-      <Toolbar />
-
+    <div id=""></div>
       <h1>ddededodediamante</h1>
 
       <img src="/icons/ddededodediamante.png" id="ddededodediamante" />
@@ -23,20 +22,29 @@ export default function Home() {
         ))}
       </div>
 
-      <div id="infoHolder">
+      <div className="infoHolder">
         <div className="informationDiv">
-          <h2>Top Languages</h2>
-          <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=ddededodediamante&layout=compact&hide_title=true"
-            id="githubTopLanguagesImg"
-          />
+          <h2>My Programming Languages</h2>
+          <div className="grid-three-elements">
+            {programming.used.map((item, index) => (
+              <span
+                key={index}
+                className={
+                  "programming-language" +
+                  (programming.favorite.includes(item) ? " favorite" : "")
+                }
+              >
+                <img
+                  alt={item}
+                  src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${item}/${item}-original.svg`}
+                />
+              </span>
+            ))}
+          </div>
         </div>
         <div className="informationDiv">
           <h2>Github Stats</h2>
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=ddededodediamante&hide_title=true"
-            id="githubStatsImg"
-          />
+          <img src="https://github-readme-stats.vercel.app/api?username=ddededodediamante&hide_title=true" />
         </div>
       </div>
 

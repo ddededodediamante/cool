@@ -4,6 +4,14 @@
   color-scheme: dark;
 }
 
+:root.dark button {
+  background-color: #202020;
+}
+
+:root.dark button:hover {
+  background-color: #292929;
+}
+
 :root.dark body {
   background: linear-gradient(90deg, #50bbd6, #3f6ece);
   color: white;

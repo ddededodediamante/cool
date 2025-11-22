@@ -15,8 +15,8 @@
     "icon": "/icons/game_physicsplatformer.png"
   },
   {
-    "url": "https://github.com/ddededodediamante/dot_dodge/releases",
-    "title": "Dot Dodge",
-    "icon": "/icons/dot_dodge.png"
+    "url": "/games/snake",
+    "title": "Snake",
+    "icon": "/icons/game_snake.png"
   }
 ]
