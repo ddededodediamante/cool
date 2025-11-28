@@ -4,7 +4,6 @@ import programming from "../config/programming.json";
 export default function Home() {
   return (
     <>
-    <div id=""></div>
       <h1>ddededodediamante</h1>
 
       <img src="/icons/ddededodediamante.png" id="ddededodediamante" />
