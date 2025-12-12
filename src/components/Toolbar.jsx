@@ -20,7 +20,7 @@ export default function Toolbar() {
     <div className="toolbar">
       <a href="/"> Main Page </a>
       <a href="/games"> Games </a>
-      <a href="/websites"> Websites </a>
+      <a href="/projects"> Projects </a>
       <img
         src={dark ? "/icons/sun.svg" : "/icons/moon.svg"}
         onClick={toggleDarkMode}

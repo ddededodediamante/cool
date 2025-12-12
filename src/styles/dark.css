@@ -63,9 +63,9 @@
   background-color: #202020;
 }
 
-/* Websites CSS */
+/* Projects CSS */
 
-:root.dark .websiteInfoDiv {
+:root.dark .projectInfoDiv {
   background-color: #202020;
   color: white;
 }

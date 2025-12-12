@@ -42,8 +42,12 @@ export default function Home() {
           </div>
         </div>
         <div className="informationDiv">
-          <h2>Github Stats</h2>
-          <img src="https://github-readme-stats.vercel.app/api?username=ddededodediamante&hide_title=true" />
+          <h2>About Me</h2>
+          <p>
+            I live in <img style={{ height: "1em"}} src="/icons/argentina.svg" /> Argentina, my primary language is Spanish but I also know
+            English. I am a full-stack developer, I create games, websites and
+            Discord bots.
+          </p>
         </div>
       </div>
 

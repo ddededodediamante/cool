@@ -264,22 +264,44 @@ button:hover {
   border-radius: 10px;
 }
 
-.websiteInfoDiv {
-  background-color: #f3f3f3;
-  color: black;
+.projectInfoDiv {
+  --color: #ff00ff;
+  font-size: 22px;
   padding: 10px;
   border-radius: 10px;
-  font-size: 22px;
   gap: 10px;
+  width: 13rem;
+  position: relative;
+  background: #f3f3f3;
+  color: black;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   animation: appear forwards 0.5s;
 }
 
-.websiteInfoDiv a {
+.projectInfoDiv::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 5px; 
+  border-radius: inherit;
+  background: linear-gradient(to bottom, var(--color), transparent);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude; 
+  -webkit-mask-composite: xor; 
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.projectInfoDiv:hover::before {
+  opacity: 1;
+}
+
+.projectInfoDiv a {
   font-size: 22px;
   color: white;
   width: 100px;
@@ -290,14 +312,14 @@ button:hover {
   transition: background-color 0.2s ease;
 }
 
-.websiteInfoDiv a:hover {
+.projectInfoDiv a:hover {
   background-color: #6e4bcf;
 }
 
-.websiteInfoDiv img {
-  width: 60px;
+.projectInfoDiv img {
+  width: 150px;
   height: auto;
-  border-radius: 13%;
+  border-radius: 10px;
 }
 
 footer {
@@ -340,6 +362,21 @@ footer {
   line-height: 1;
   pointer-events: none; 
   color: red;
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+code {
+  padding: 3px 5px;
+  border-radius: 5px;
+  background-color: #242424;
+  color: white;
 }
 
 /* Small Devices */

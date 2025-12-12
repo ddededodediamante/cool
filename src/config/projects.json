@@ -2,21 +2,25 @@
   {
     "url": "https://dde-ext-gallery.vercel.app/",
     "icon": "/icons/ddededodediamante.png",
-    "name": "dde's Extension Gallery"
+    "name": "Extension Gallery",
+    "color": "#EB459F"
   },
   {
     "url": "https://rarry.vercel.app/",
-    "icon": "https://rarry.vercel.app/icons/Rarry.svg",
-    "name": "Rarry"
+    "icon": "https://rarry.vercel.app/icons/R-Rarry.svg",
+    "name": "Rarry",
+    "color": "#3B82F6"
   },
   {
     "url": "https://ddechat.vercel.app/",
     "icon": "https://ddechat.vercel.app/favicon.ico",
-    "name": "ddeChat"
+    "name": "ddeChat",
+    "color": "#D67CFF"
   },
   {
     "url": "https://block-creator.vercel.app/",
     "icon": "https://block-creator.vercel.app/favicon.ico",
-    "name": "Block Creator"
+    "name": "Block Creator",
+    "color": "#9966FF"
   }
 ]
