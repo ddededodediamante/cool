@@ -4,11 +4,11 @@
     "html5",
     "css3",
     "typescript",
+    "discordjs",
     "svelte",
     "react",
     "lua",
-    "java",
-    "python"
+    "java"
   ],
-  "favorite": ["javascript", "svelte", "lua"]
+  "favorite": ["javascript", "svelte", "lua", "discordjs"]
 }
