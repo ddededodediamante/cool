@@ -8,6 +8,7 @@ import RandomNumberGenerator from "./pages/stuff/RandomNumberGenerator.jsx";
 
 import Toolbar from "./components/Toolbar.jsx";
 import Footer from "./components/Footer.jsx";
+import Lore from "./pages/stuff/Lore.jsx";
 
 export function App() {
   return (
@@ -20,6 +21,7 @@ export function App() {
         <Snake path="/games/snake" />
         <Projects path="/projects" />
         <RandomNumberGenerator path="/stuff/rng" />
+        <Lore path="/stuff/lore" />
       </Router>
 
       <Footer />
