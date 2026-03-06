@@ -1,0 +1,24 @@
+{
+  "tools": [
+    { "name": "VS Code", "icon": "vscode/vscode-original" },
+    { "name": "Git", "icon": "git/git-original" },
+    { "name": "GitHub", "icon": "github/github-original" }
+  ],
+  "spokenLanguages": [
+    { "name": "Spanish", "flag": "/icons/argentina.svg", "level": "Native" },
+    { "name": "English", "flag": "/icons/usa.svg", "level": "Fluent" }
+  ],
+  "programming": {
+    "used": [
+      "javascript",
+      "typescript",
+      "react",
+      "html5",
+      "css3",
+      "discordjs",
+      "java",
+      "lua"
+    ],
+    "favorite": ["javascript", "react", "discordjs"]
+  }
+}

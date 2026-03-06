@@ -1,52 +1,110 @@
+import { useState } from "react";
 import socials from "../config/socials.json";
-import programming from "../config/programming.json";
+import { programming, spokenLanguages, tools } from "../config/stuff.json";
 
 export default function Home() {
+  const [skillsTab, setSkillsTab] = useState("languages");
+
   return (
     <>
-      <h1>ddededodediamante</h1>
-
-      <img src="/icons/ddededodediamante.png" id="ddededodediamante" />
-
-      <div id="buttonHolder" className="hidden">
-        {socials.map((item, index) => (
-          <a
-            key={index}
-            href={item.url}
-            target="_blank"
-            className="social-button"
-          >
-            <img src={item.icon} alt="A platform's icon" />
-          </a>
-        ))}
-      </div>
-
-      <div className="infoHolder">
-        <div className="informationDiv">
-          <h2>My Programming Languages</h2>
-          <div className="grid-three-elements">
-            {programming.used.map((item, index) => (
-              <span
-                key={index}
-                className={
-                  "programming-language" +
-                  (programming.favorite.includes(item) ? " favorite" : "")
-                }
-              >
-                <img
-                  alt={item}
-                  src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${item}/${item}-original.svg`}
-                />
-              </span>
+      <div className="content">
+        <div className="info">
+          <img src="/icons/ddededodediamante.png" className="pfp" />
+          <h2>
+            ddededodediamante
+            <img
+              style={{ height: "1em" }}
+              src="/icons/argentina.svg"
+              alt="from Argentina"
+              title="Argentina"
+            />
+          </h2>
+          <div id="buttonHolder" className="hidden">
+            {socials.map((item, index) => (
+              <a key={index} href={item.url} target="_blank" className="social-button">
+                <img src={item.icon} alt="A platform's icon" />
+              </a>
             ))}
           </div>
         </div>
-        <div className="informationDiv">
+
+        <div className="info">
+          <h2>Some of my skills :)</h2>
+          <div className="skills-tabs">
+            <button
+              className={"tab-btn" + (skillsTab === "languages" ? " active" : "")}
+              onClick={() => setSkillsTab("languages")}
+            >
+              💻 Languages
+            </button>
+            <button
+              className={"tab-btn" + (skillsTab === "tools" ? " active" : "")}
+              onClick={() => setSkillsTab("tools")}
+            >
+              🔧 Tools
+            </button>
+            <button
+              className={"tab-btn" + (skillsTab === "spoken" ? " active" : "")}
+              onClick={() => setSkillsTab("spoken")}
+            >
+              🗣️ Spoken
+            </button>
+          </div>
+
+          {skillsTab === "languages" && (
+            <div className="grid-three-elements">
+              {programming.used.map((item, index) => (
+                <span
+                  key={index}
+                  className={
+                    "programming-language" +
+                    (programming.favorite.includes(item) ? " favorite" : "")
+                  }
+                >
+                  <img
+                    alt={item}
+                    src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${item}/${item}-original.svg`}
+                  />
+                </span>
+              ))}
+            </div>
+          )}
+
+          {skillsTab === "tools" && (
+            <div className="grid-three-elements">
+              {tools.map((tool, index) => (
+                <span key={index} className="programming-language" title={tool.name}>
+                  <img
+                    alt={tool.name}
+                    src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tool.icon}.svg`}
+                  />
+                </span>
+              ))}
+            </div>
+          )}
+
+          {skillsTab === "spoken" && (
+            <div className="spoken-languages">
+              {spokenLanguages.map((lang, index) => (
+                <div key={index} className="spoken-language">
+                  <img src={lang.flag} alt={lang.name} style={{ height: "1.5em" }} />
+                  <span>{lang.name}</span>
+                  <span className="spoken-level">{lang.level}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="info">
           <h2>About Me</h2>
           <p>
-            I live in <img style={{ height: "1em"}} src="/icons/argentina.svg" /> Argentina, my primary language is Spanish but I also know
-            English. I am a full-stack developer, I create games, websites and
-            Discord bots.
+            Hey! I'm a full-stack developer from Argentina 🇦🇷 who loves building websites,
+            games, and Discord bots. I speak Spanish natively and English fluently.
+          </p>
+          <p>
+            Outside of coding, I'm a big fan of platformers and incrementals, they're a huge part
+            of why I got into game dev in the first place.
           </p>
         </div>
       </div>
@@ -62,9 +120,8 @@ export default function Home() {
             src="https://steve0greatness.github.io/webring/logo-dark-500.webp"
             width="125"
             height="52"
-            onClick={() =>
-              window.open("https://steve0greatness.github.io/webring")
-            }
+            style={{ cursor: "pointer" }}
+            onClick={() => window.open("https://steve0greatness.github.io/webring")}
           />
         </div>
         <div>
