@@ -10,8 +10,6 @@
   }
 }
 
-/* Main CSS */
-
 * {
   margin: 0;
   padding: 0;
@@ -20,13 +18,9 @@
   font-family: "Comic Sans MS", "Comic Sans", Arial, Helvetica, sans-serif;
 }
 
-:root {
-  color-scheme: light;
-}
-
 body {
-  background: linear-gradient(90deg, #64e0ff, #5891ff);
-  color: black;
+  background: linear-gradient(90deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  color: var(--text-primary);
   text-align: center;
   display: flex;
   align-items: center;
@@ -38,7 +32,7 @@ body {
 }
 
 a {
-  color: rgb(143, 37, 204);
+  color: var(--link-color);
 }
 
 h2 {
@@ -56,13 +50,14 @@ button {
   border-radius: 10px;
   cursor: pointer;
   border: none;
-  background-color: #f3f3f3;
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
   will-change: background-color;
   transition: 0.2s background-color ease;
 }
 
 button:hover {
-  background-color: #d3d3d3;
+  background-color: var(--surface-hover);
 }
 
 #buttonHolder {
@@ -90,10 +85,10 @@ button:hover {
   flex-direction: column;
   flex-wrap: nowrap;
   place-items: center;
-  flex: 1 1 250px;
-  min-width: 250px;
+  flex: 1 1 17rem;
+  min-width: 17rem;
   max-width: 100%;
-  background-color: #f3f3f3;
+  background-color: var(--surface-primary);
   padding: 1rem;
   border-radius: 0.65rem;
   gap: 1rem;
@@ -112,12 +107,12 @@ button:hover {
   width: 100%;
   gap: 20px;
   z-index: 1000;
-  background-color: #f3f3f3;
+  background-color: var(--surface-primary);
 }
 
 .toolbar a,
 .toolbar img {
-  color: black;
+  color: var(--text-primary);
   background-color: transparent;
   text-align: center;
   white-space: nowrap;
@@ -128,19 +123,19 @@ button:hover {
   font-size: 22px;
   padding: 10px;
   border-radius: 10px;
-  border: 2px dashed rgba(127, 127, 127, 0.3);
+  border: 2px dashed var(--border-muted);
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .toolbar img {
   width: 55px;
   height: 55px;
-  fill: black;
+  fill: var(--text-primary);
 }
 
 .toolbar a:hover,
 .toolbar img:hover {
-  background-color: rgba(127, 127, 127, 0.3);
+  background-color: var(--border-muted);
   transform: translateY(-2px);
 }
 
@@ -159,8 +154,8 @@ button:hover {
 
 .social-button:hover {
   transform: translateY(-2px);
-  background-color: #ebebeb;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: var(--surface-subtle);
+  box-shadow: 0px 2px 2px var(--shadow-card);
 }
 
 .social-button img {
@@ -194,8 +189,8 @@ button:hover {
 
 .informationDiv {
   max-width: fit-content;
-  color: black;
-  background-color: #f3f3f3;
+  color: var(--text-primary);
+  background-color: var(--surface-primary);
   width: calc(100% - 20px);
   padding: 10px;
   border-radius: 10px;
@@ -222,7 +217,8 @@ button:hover {
 #webring div {
   display: flex;
   flex-direction: column;
-  background-color: #f3f3f3;
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
   padding: 2px;
   border-radius: 10px;
   font-size: 20px;
@@ -243,7 +239,7 @@ button:hover {
 }
 
 .gameDiv {
-  background-color: #f3f3f3;
+  background-color: var(--surface-primary);
   padding: 10px;
   border-radius: 10px;
   gap: 10px;
@@ -258,9 +254,9 @@ button:hover {
 
 .gameDiv a {
   font-size: 22px;
-  color: white;
+  color: var(--text-inverse);
   width: 100px;
-  background-color: #4b59cf;
+  background-color: var(--accent-primary);
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -268,7 +264,7 @@ button:hover {
 }
 
 .gameDiv a:hover {
-  background-color: #6e4bcf;
+  background-color: var(--accent-primary-hover);
 }
 
 .gameDiv img {
@@ -285,8 +281,8 @@ button:hover {
   gap: 10px;
   width: 13rem;
   position: relative;
-  background: #f3f3f3;
-  color: black;
+  background: var(--surface-primary);
+  color: var(--text-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,14 +293,14 @@ button:hover {
   content: "";
   position: absolute;
   inset: 0;
-  padding: 5px; 
+  padding: 5px;
   border-radius: inherit;
   background: linear-gradient(to bottom, var(--color), transparent);
   mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
-  mask-composite: exclude; 
-  -webkit-mask-composite: xor; 
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
   pointer-events: none;
   opacity: 0.5;
   transition: opacity 0.2s ease;
@@ -316,9 +312,9 @@ button:hover {
 
 .projectInfoDiv a {
   font-size: 22px;
-  color: white;
+  color: var(--text-inverse);
   width: 100px;
-  background-color: #4b59cf;
+  background-color: var(--accent-primary);
   text-align: center;
   padding: 10px;
   border-radius: 10px;
@@ -326,7 +322,7 @@ button:hover {
 }
 
 .projectInfoDiv a:hover {
-  background-color: #6e4bcf;
+  background-color: var(--accent-primary-hover);
 }
 
 .projectInfoDiv img {
@@ -339,8 +335,8 @@ footer {
   padding: 10px;
   width: 100%;
   margin-top: auto;
-  background-color: #202020;
-  color: white;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
 }
 
 .grid-three-elements {
@@ -363,7 +359,7 @@ footer {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .programming-language.favorite::after {
@@ -373,7 +369,7 @@ footer {
   left: -8px;
   font-size: 20px;
   line-height: 1;
-  pointer-events: none; 
+  pointer-events: none;
   color: red;
   transition: opacity 0.15s ease;
 }
@@ -393,14 +389,15 @@ footer {
 .tab-btn {
   cursor: pointer;
   border: 2px solid transparent;
-  background-color: #e0e0e0;
+  background-color: var(--surface-muted);
+  color: var(--text-primary);
   font-size: 15px;
   transition: 0.2s background-color ease, 0.2s border-color ease;
 }
 
 .tab-btn.active {
-  background-color: #f3f3f3;
-  border-color: #d0d0d0;
+  background-color: var(--surface-primary);
+  border-color: var(--border-tab);
 }
 
 .cool-list {
@@ -415,7 +412,8 @@ footer {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  background-color: #e8e8e8;
+  background-color: var(--surface-secondary);
+  color: var(--text-primary);
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 18px;
@@ -424,8 +422,8 @@ footer {
 .cool-list .item .tag {
   margin-left: auto;
   font-size: 16px;
-  color: #ffffff;
-  background-color: #3381e7;
+  color: var(--tag-text);
+  background-color: var(--tag-bg);
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
 }
@@ -441,8 +439,8 @@ footer {
 code {
   padding: 3px 5px;
   border-radius: 5px;
-  background-color: #242424;
-  color: white;
+  background-color: var(--code-bg);
+  color: var(--code-text);
 }
 
 /* Small Devices */

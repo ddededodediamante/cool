@@ -76,7 +76,11 @@ export default function Home() {
                 <div key={index} className="item" title={tool.name}>
                   <img
                     style={{ height: "1.5em" }}
-                    src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tool.icon}.svg`}
+                    src={
+                      tool.name === "GitHub"
+                        ? "/icons/github.svg"
+                        : `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tool.icon}.svg`
+                    }
                     alt={tool.name}
                   />
                   <span>{tool.name}</span>

@@ -1,0 +1,69 @@
+:root {
+  --bg-gradient-start: #64e0ff;
+  --bg-gradient-end: #5891ff;
+
+  --text-primary: black;
+  --text-inverse: white;
+
+  --link-color: rgb(143, 37, 204);
+
+  --surface-primary: #f3f3f3;
+  --surface-secondary: #e8e8e8;
+  --surface-muted: #e0e0e0;
+  --surface-hover: #d3d3d3;
+  --surface-subtle: #ebebeb;
+
+  --border-muted: rgba(127, 127, 127, 0.3);
+  --border-tab: #d0d0d0;
+
+  --accent-primary: #4b59cf;
+  --accent-primary-hover: #6e4bcf;
+
+  --tag-bg: #3381e7;
+  --tag-text: white;
+
+  --footer-bg: #202020;
+  --footer-text: white;
+
+  --code-bg: #242424;
+  --code-text: white;
+
+  --shadow-card: rgba(0, 0, 0, 0.5);
+
+  color-scheme: light;
+}
+
+:root.dark {
+  --bg-gradient-start: rgb(60, 184, 215);
+  --bg-gradient-end: rgb(48, 105, 215);
+
+  --text-primary: #e8e8e8;
+  --text-inverse: #111111;
+
+  --link-color: #c084fc;
+
+  --surface-primary: #202020;
+  --surface-secondary: #292929;
+  --surface-muted: #2e2e2e;
+  --surface-hover: #333333;
+  --surface-subtle: #252525;
+
+  --border-muted: rgba(127, 127, 127, 0.3);
+  --border-tab: #444444;
+
+  --accent-primary: #5b6ee8;
+  --accent-primary-hover: #7c5be8;
+
+  --tag-bg: #2e6fd4;
+  --tag-text: white;
+
+  --footer-bg: #0a0f18;
+  --footer-text: #cccccc;
+
+  --code-bg: #0d1117;
+  --code-text: #e6edf3;
+
+  --shadow-card: rgba(0, 0, 0, 0.8);
+
+  color-scheme: dark;
+}
