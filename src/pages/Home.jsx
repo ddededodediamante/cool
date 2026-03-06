@@ -71,25 +71,27 @@ export default function Home() {
           )}
 
           {skillsTab === "tools" && (
-            <div className="grid-three-elements">
+            <div className="cool-list">
               {tools.map((tool, index) => (
-                <span key={index} className="programming-language" title={tool.name}>
+                <div key={index} className="item" title={tool.name}>
                   <img
-                    alt={tool.name}
+                    style={{ height: "1.5em" }}
                     src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tool.icon}.svg`}
+                    alt={tool.name}
                   />
-                </span>
+                  <span>{tool.name}</span>
+                </div>
               ))}
             </div>
           )}
 
           {skillsTab === "spoken" && (
-            <div className="spoken-languages">
+            <div className="cool-list">
               {spokenLanguages.map((lang, index) => (
-                <div key={index} className="spoken-language">
-                  <img src={lang.flag} alt={lang.name} style={{ height: "1.5em" }} />
+                <div key={index} className="item">
+                  <img style={{ height: "1.5em" }} src={lang.flag} alt={lang.name} />
                   <span>{lang.name}</span>
-                  <span className="spoken-level">{lang.level}</span>
+                  <span className="tag">{lang.level}</span>
                 </div>
               ))}
             </div>
@@ -103,8 +105,8 @@ export default function Home() {
             games, and Discord bots. I speak Spanish natively and English fluently.
           </p>
           <p>
-            Outside of coding, I'm a big fan of platformers and incrementals, they're a huge part
-            of why I got into game dev in the first place.
+            Outside of coding, I'm a big fan of platformers and incrementals, they're a
+            huge part of why I got into game dev in the first place.
           </p>
         </div>
       </div>

@@ -1,8 +1,8 @@
 {
   "tools": [
     { "name": "VS Code", "icon": "vscode/vscode-original" },
-    { "name": "Git", "icon": "git/git-original" },
-    { "name": "GitHub", "icon": "github/github-original" }
+    { "name": "GitHub", "icon": "github/github-original" },
+    { "name": "Git", "icon": "git/git-original" }
   ],
   "spokenLanguages": [
     { "name": "Spanish", "flag": "/icons/argentina.svg", "level": "Native" },
