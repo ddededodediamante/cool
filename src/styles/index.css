@@ -96,7 +96,7 @@ button:hover {
   padding: 1rem;
   gap: 1rem;
   width: 100%;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .info {
