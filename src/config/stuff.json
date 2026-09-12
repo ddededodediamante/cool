@@ -20,5 +20,35 @@
       "lua"
     ],
     "favorite": ["javascript", "react", "discordjs"]
-  }
+  },
+  "likedItems": [
+    {
+      "name": "Red Apples",
+      "description": "I really like red apples, specially sweet ones. One day I bought an apple and it was really good, and it was like 10 PM when I went to the shop that is in a quite considerable distance. Wow, I really like apples! Apples are like, so sweet, and red. I prefer them over green apples, since most green apples I've tried weren't that good, they're more acid than sweet, so that's why I prefer red apples. If you made me choose between two green apples and one red apple, I would choose the red one. Aren't red apples just so beautiful? I mean, humans basically breeded millions of apples just to get the most sweet ones, like the ones that I've eaten. I liked the apples I bought."
+    },
+    {
+      "name": "Coding",
+      "description": "I like coding! It feels really good when I finally get something to work and then other people get to try it, but sometimes they can find bugs and then I have to fix them before going to sleep and I end up sleeping at 3 AM. Also, I mostly program in JavaScript and JSX and stuff but I haven't used other stuff much, but I have used Luau for ROBLOX. I used to play ROBLOX a lot but now I don't anymore, just casually and mostly with friends. Programming more like Noobgramming, LOL."
+    },
+    {
+      "name": "Chess",
+      "description": "Chess is really interesting. I sometimes play it when I'm bored or if one of my friends on Discord or IRL (but not that common) wants to play it. For me, it's a bit awkward while starting the round, but after a while you get to take pieces and you really have to think about your moves. I mostly play in chess.com, but I have played ONCE in my life to chess in real life. I keep confusing the king with the queen because in the internet, kings are mostly shown with the exact crown shape that chess.com uses for the queen, so that confuses me. But overall I like chess, and I'm actively trying to get better at it."
+    },
+    {
+      "name": "Blockly",
+      "description": "I like visual programming, but Blockly is the best one (for me atleast). I like how the blocks snap together with that iconic Blockly blocks snapping together. IMO this is one of Google's best projects, although I don't know many Google projects except stuff like Google and YouTube and Gmail and uhh. I like Blockly's zelos renderer, I discovered that it was made after Scratch 3.0, so Blockly took inspiration from Scratch for the zelos renderer, and I always thought it was the opposite. I like mutators and the way they change a block's shape, inputs, and labels, it feels dynamic and playful."
+    },
+    {
+      "name": "Subway Surfers",
+      "description": "Subway Surfers is a pretty fun game, even though it's mostly repetitive I don't get tired of it. It gets way more fun when you go faster because it's like I've never reached this speed before. Anyways, coins are like, good, or something. If you get coins you can upgrade your power-ups to make them last longer. The jetpack superpower is my favorite, because you can collect many coins and also you go really fast. Usually when you collect the jetpack you start with a speed, then when the power-up ends you're suddenly faster beecause of the score. I like playing it, but I don't buy any micro-transactions or whatever, I just enjoy the plain game."
+    },
+    {
+      "name": "Terraria",
+      "description": "I like Terraria. The first time I've played it was around 5 years ago, and on the first night I got a bloodmoon. Terraria is really extensive and it's fun to explore and just get items and discover new stuff, but then I set up a trap and instantly die. I've played with the crimson corruption mostly, so I should take a gander at the other purple corruption (I forgot the name). As of September 12, 2026, I've defeated the Eye of Cthulu. I've defeated it before though, but I've started a fresh new world when I bought Terraria for PC on Steam."
+    },
+    {
+      "name": "PNPM",
+      "description": "Switching to PNPM was really needed. My computer is quite slow for today's standards, and my internet isn't extraordinary, so PNPM helped me save disk space and made downloading packages faster. PNPM works good 99% of the time, except for one case related to linking, but it was because NPM's link sucked, and that made it work. Anyways, that error was on scratch-gui, which has an old codebase, so it makes sense it didn't support modern PNPM. I use version 11.24.0."
+    }
+  ]
 }

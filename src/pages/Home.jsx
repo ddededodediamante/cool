@@ -1,6 +1,11 @@
 import { useState } from "react";
 import socials from "../config/socials.json";
-import { programming, spokenLanguages, tools } from "../config/stuff.json";
+import {
+  programming,
+  spokenLanguages,
+  tools,
+  likedItems,
+} from "../config/stuff.json";
 
 export default function Home() {
   const [skillsTab, setSkillsTab] = useState("languages");
@@ -21,7 +26,12 @@ export default function Home() {
           </h2>
           <div id="buttonHolder" className="hidden">
             {socials.map((item, index) => (
-              <a key={index} href={item.url} target="_blank" className="social-button">
+              <a
+                key={index}
+                href={item.url}
+                target="_blank"
+                className="social-button"
+              >
                 <img src={item.icon} alt="A platform's icon" />
               </a>
             ))}
@@ -29,10 +39,12 @@ export default function Home() {
         </div>
 
         <div className="info">
-          <h2>Some of my skills :)</h2>
+          <h2>Some things about me!</h2>
           <div className="skills-tabs">
             <button
-              className={"tab-btn" + (skillsTab === "languages" ? " active" : "")}
+              className={
+                "tab-btn" + (skillsTab === "languages" ? " active" : "")
+              }
               onClick={() => setSkillsTab("languages")}
             >
               💻 Languages
@@ -48,6 +60,12 @@ export default function Home() {
               onClick={() => setSkillsTab("spoken")}
             >
               🗣️ Spoken
+            </button>
+            <button
+              className={"tab-btn" + (skillsTab === "liked" ? " active" : "")}
+              onClick={() => setSkillsTab("liked")}
+            >
+              💖 What I Like
             </button>
           </div>
 
@@ -93,11 +111,31 @@ export default function Home() {
             <div className="cool-list">
               {spokenLanguages.map((lang, index) => (
                 <div key={index} className="item">
-                  <img style={{ height: "1.5em" }} src={lang.flag} alt={lang.name} />
+                  <img
+                    style={{ height: "1.5em" }}
+                    src={lang.flag}
+                    alt={lang.name}
+                  />
                   <span>{lang.name}</span>
                   <span className="tag">{lang.level}</span>
                 </div>
               ))}
+            </div>
+          )}
+
+          {skillsTab === "liked" && (
+            <div className="cool-list">
+              {likedItems.map((item, index) => {
+                const title = typeof item === "string" ? item : item.name;
+                const content =
+                  typeof item === "string" ? null : item.description;
+                return (
+                  <details key={index} className="item">
+                    <summary>{title}</summary>
+                    {content && <p>{content}</p>}
+                  </details>
+                );
+              })}
             </div>
           )}
         </div>
@@ -105,12 +143,13 @@ export default function Home() {
         <div className="info">
           <h2>About Me</h2>
           <p>
-            Hey! I'm a full-stack developer from Argentina 🇦🇷 who loves building websites,
-            games, and Discord bots. I speak Spanish natively and English fluently.
+            Hey! I'm a full-stack developer from Argentina 🇦🇷 who loves building
+            websites, games, and Discord bots. I speak Spanish natively and
+            English fluently.
           </p>
           <p>
-            Outside of coding, I'm a big fan of platformers and incrementals, they're a
-            huge part of why I got into game dev in the first place.
+            Outside of coding, I'm a big fan of platformers and incrementals,
+            they're a huge part of why I got into game dev in the first place.
           </p>
         </div>
       </div>
@@ -127,7 +166,9 @@ export default function Home() {
             width="125"
             height="52"
             style={{ cursor: "pointer" }}
-            onClick={() => window.open("https://steve0greatness.github.io/webring")}
+            onClick={() =>
+              window.open("https://steve0greatness.github.io/webring")
+            }
           />
         </div>
         <div>

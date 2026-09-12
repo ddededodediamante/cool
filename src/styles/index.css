@@ -107,10 +107,12 @@ button:hover {
   flex: 1 1 17rem;
   min-width: 17rem;
   max-width: 100%;
+  max-height: 500px;
   background-color: var(--surface-primary);
   padding: 1rem;
   border-radius: 0.65rem;
   gap: 1rem;
+  overflow: auto;
 }
 
 .toolbar {
@@ -455,6 +457,11 @@ footer {
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 18px;
+}
+
+.cool-list details.item {
+  justify-content: start;
+  align-items: start;
 }
 
 .cool-list .item .tag {
