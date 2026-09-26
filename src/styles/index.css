@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Comic Sans MS", "Comic Sans", Arial, Helvetica, sans-serif;
+}
+
 @keyframes appear {
   from {
     transform: scale(0.5);
@@ -10,14 +18,6 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Comic Sans MS", "Comic Sans", Arial, Helvetica, sans-serif;
-}
-
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -27,6 +27,30 @@
   }
   100% {
     background-position: 200% 50%;
+  }
+}
+
+.social-button,
+.programming-language {
+  transform: scale(0.8);
+  opacity: 0;
+  animation: appear 0.3s ease forwards;
+  animation-delay: calc(sibling-index() * 0.1s - 0.1s);
+}
+
+.gameDiv a,
+.projectInfoDiv a {
+  font-size: 22px;
+  color: var(--text-inverse);
+  width: 100px;
+  background-color: var(--accent-primary);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--accent-primary-hover);
   }
 }
 
@@ -73,10 +97,10 @@ button {
   color: var(--text-primary);
   will-change: background-color;
   transition: 0.2s background-color ease;
-}
 
-button:hover {
-  background-color: var(--surface-hover);
+  :hover {
+    background-color: var(--surface-hover);
+  }
 }
 
 #buttonHolder {
@@ -129,37 +153,36 @@ button:hover {
   gap: 20px;
   z-index: 1000;
   background-color: var(--surface-primary);
-}
 
-.toolbar a,
-.toolbar img {
-  color: var(--text-primary);
-  background-color: transparent;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: keep-all;
-  cursor: pointer;
-  font-size: 22px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px dashed var(--border-muted);
-  transition:
-    background-color 0.2s ease,
-    transform 0.2s ease;
-}
+  a,
+  img {
+    color: var(--text-primary);
+    background-color: transparent;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dashed var(--border-muted);
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease;
 
-.toolbar img {
-  width: 55px;
-  height: 55px;
-  fill: var(--text-primary);
-}
+    &:hover {
+      background-color: var(--border-muted);
+      transform: translateY(-2px);
+    }
+  }
 
-.toolbar a:hover,
-.toolbar img:hover {
-  background-color: var(--border-muted);
-  transform: translateY(-2px);
+  img {
+    width: 55px;
+    height: 55px;
+    fill: var(--text-primary);
+  }
 }
 
 .social-button {
@@ -171,10 +194,6 @@ button:hover {
   border-radius: 25%;
   width: 60px;
   height: 60px;
-  transform: scale(0.8);
-  opacity: 0;
-  animation: appear 0.3s ease forwards;
-  animation-delay: calc(sibling-index() * 0.1s - 0.1s);
 
   transition:
     transform 0.2s ease,
@@ -225,81 +244,49 @@ button:hover {
   padding: 10px;
   border-radius: 10px;
   animation: appear 0.3s ease forwards;
-}
 
-.informationDiv h2 {
-  margin-bottom: 10px;
-}
+  h2 {
+    margin-bottom: 10px;
 
-.informationDiv img {
-  width: 100%;
-  max-width: fit-content;
+    img {
+      width: 100%;
+      max-width: fit-content;
+    }
+  }
 }
 
 #webring {
   display: flex;
   flex-direction: row;
-  gap: 5px;
-  align-items: stretch;
-  animation: appear 0.3s ease forwards;
-}
-
-#webring div {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--surface-primary);
-  color: var(--text-primary);
-  padding: 2px;
-  border-radius: 10px;
-  font-size: 20px;
-  height: fit-content;
-  padding: 5px;
-  transition: transform 0.2s ease;
-}
-
-#webring,
-#webring div {
   text-align: center;
   align-items: center;
   justify-content: center;
-}
-
-#webring div:hover {
-  transform: translateY(-2px);
+  gap: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  animation: appear 0.3s ease forwards;
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
 }
 
 .gameDiv {
-  background-color: var(--surface-primary);
-  padding: 10px;
-  border-radius: 10px;
-  gap: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  animation: appear 0.3s ease forwards;
-}
-
-.gameDiv a {
-  font-size: 22px;
-  color: var(--text-inverse);
-  width: 100px;
-  background-color: var(--accent-primary);
-  text-align: center;
+  background-color: var(--surface-primary);
   padding: 10px;
   border-radius: 10px;
-  transition: background-color 0.2s ease;
-}
+  gap: 10px;
+  animation: appear 0.3s ease forwards;
 
-.gameDiv a:hover {
-  background-color: var(--accent-primary-hover);
-}
-
-.gameDiv img {
-  width: auto;
-  height: 250px;
-  border-radius: 10px;
+  img {
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+  }
 }
 
 .projectInfoDiv {
@@ -316,48 +303,33 @@ button:hover {
   flex-direction: column;
   align-items: center;
   animation: appear 0.3s ease forwards;
-}
 
-.projectInfoDiv::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 5px;
-  border-radius: inherit;
-  background: linear-gradient(to bottom, var(--color), transparent);
-  mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  mask-composite: exclude;
-  -webkit-mask-composite: xor;
-  pointer-events: none;
-  opacity: 0.5;
-  transition: opacity 0.2s ease;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 5px;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, var(--color), transparent);
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+  }
 
-.projectInfoDiv:hover::before {
-  opacity: 1;
-}
+  &:hover::before {
+    opacity: 1;
+  }
 
-.projectInfoDiv a {
-  font-size: 22px;
-  color: var(--text-inverse);
-  width: 100px;
-  background-color: var(--accent-primary);
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  transition: background-color 0.2s ease;
-}
-
-.projectInfoDiv a:hover {
-  background-color: var(--accent-primary-hover);
-}
-
-.projectInfoDiv img {
-  width: 150px;
-  height: auto;
-  border-radius: 10px;
+  img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
 }
 
 footer {
@@ -387,33 +359,28 @@ footer {
   position: relative;
   overflow: visible;
 
-  transform: scale(0.8);
-  opacity: 0;
-  animation: appear 0.3s ease forwards;
-  animation-delay: calc(sibling-index() * 0.1s - 0.1s);
-}
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
 
-.programming-language img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
+  &.favorite::after {
+    content: "❤";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    font-size: 20px;
+    line-height: 1;
+    pointer-events: none;
+    color: red;
+    transition: opacity 0.15s ease;
+  }
 
-.programming-language.favorite::after {
-  content: "❤";
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  font-size: 20px;
-  line-height: 1;
-  pointer-events: none;
-  color: red;
-  transition: opacity 0.15s ease;
-}
-
-.programming-language.favorite:hover::after {
-  opacity: 0;
+  &.favorite:hover::after {
+    opacity: 0;
+  }
 }
 
 .skills-tabs {
@@ -433,11 +400,11 @@ footer {
   transition:
     0.2s background-color ease,
     0.2s border-color ease;
-}
 
-.tab-btn.active {
-  background-color: var(--surface-primary);
-  border-color: var(--border-tab);
+  &.active {
+    background-color: var(--surface-primary);
+    border-color: var(--border-tab);
+  }
 }
 
 .cool-list {
@@ -445,48 +412,48 @@ footer {
   flex-direction: column;
   gap: 10px;
   width: 100%;
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--surface-secondary);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  details.item {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .item .tag {
+    margin-left: auto;
+    font-size: 16px;
+    color: var(--tag-text);
+    background-color: var(--tag-bg);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+  }
 }
 
-.cool-list .item {
+.inline,
+.vertical {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  background-color: var(--surface-secondary);
-  color: var(--text-primary);
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 18px;
-}
-
-.cool-list details.item {
-  justify-content: start;
-  align-items: start;
-}
-
-.cool-list .item .tag {
-  margin-left: auto;
-  font-size: 16px;
-  color: var(--tag-text);
-  background-color: var(--tag-bg);
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.5rem;
+  place-items: center;
+  place-content: center;
+  gap: 5px;
 }
 
 .inline {
-  display: flex;
   flex-direction: row;
-  place-items: center;
-  place-content: center;
-  gap: 5px;
 }
 
 .vertical {
-  display: flex;
   flex-direction: column;
-  place-items: center;
-  place-content: center;
-  gap: 5px;
 }
 
 code {

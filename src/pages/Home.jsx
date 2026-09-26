@@ -4,7 +4,7 @@ import {
   programming,
   spokenLanguages,
   tools,
-  likedItems,
+  likedItems
 } from "../config/stuff.json";
 
 export default function Home() {
@@ -155,27 +155,18 @@ export default function Home() {
       </div>
 
       <div id="webring">
-        <div>
-          <a href="https://steve0greatness.github.io/webring/sites/ddededodediamante/prev.xhtml">
-            Previous
-          </a>
-        </div>
-        <div>
+        <a href="https://steve0greatness.github.io/webring/sites/ddededodediamante/prev.xhtml">
+          Previous
+        </a>
+        <a href="https://steve0greatness.github.io/webring">
           <img
             src="https://steve0greatness.github.io/webring/logo-dark-500.webp"
-            width="125"
-            height="52"
-            style={{ cursor: "pointer" }}
-            onClick={() =>
-              window.open("https://steve0greatness.github.io/webring")
-            }
+            height="40"
           />
-        </div>
-        <div>
-          <a href="https://steve0greatness.github.io/webring/sites/ddededodediamante/next.xhtml">
-            Next
-          </a>
-        </div>
+        </a>
+        <a href="https://steve0greatness.github.io/webring/sites/ddededodediamante/next.xhtml">
+          Next
+        </a>
       </div>
     </>
   );
