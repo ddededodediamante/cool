@@ -19,7 +19,6 @@ export default function Toolbar() {
   return (
     <div className="toolbar">
       <a href="/"> Main Page </a>
-      <a href="/games"> Games </a>
       <a href="/projects"> Projects </a>
       <img
         src={dark ? "/icons/sun.svg" : "/icons/moon.svg"}

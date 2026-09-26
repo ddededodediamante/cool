@@ -1,7 +1,6 @@
 import Router from "preact-router";
 
 import Home from "./pages/Home.jsx";
-import Games from "./pages/Games.jsx";
 import Projects from "./pages/Projects.jsx";
 import Snake from "./pages/games/Snake.jsx";
 import RandomNumberGenerator from "./pages/stuff/RandomNumberGenerator.jsx";
@@ -15,14 +14,15 @@ export function App() {
     <>
       <Toolbar />
 
-      <Router>
-        <Home path="/" />
-        <Games path="/games" />
-        <Snake path="/games/snake" />
-        <Projects path="/projects" />
-        <RandomNumberGenerator path="/stuff/rng" />
-        <Lore path="/stuff/lore" />
-      </Router>
+      <div id="app">
+        <Router>
+          <Home path="/" />
+          <Snake path="/games/snake" />
+          <Projects path="/projects" />
+          <RandomNumberGenerator path="/stuff/rng" />
+          <Lore path="/stuff/lore" />
+        </Router>
+      </div>
 
       <Footer />
     </>

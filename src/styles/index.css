@@ -38,11 +38,10 @@
   animation-delay: calc(sibling-index() * 0.1s - 0.1s);
 }
 
-.gameDiv a,
 .projectInfoDiv a {
   font-size: 22px;
-  color: var(--text-inverse);
   width: 100px;
+  color: var(--text-inverse);
   background-color: var(--accent-primary);
   text-align: center;
   padding: 10px;
@@ -50,6 +49,7 @@
   transition: background-color 0.2s ease;
 
   &:hover {
+    color: var(--text-inverse);
     background-color: var(--accent-primary-hover);
   }
 }
@@ -69,13 +69,24 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 5px;
   min-height: 100vh;
   max-width: 100vw;
 }
 
+div#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
 a {
-  color: var(--link-color);
+  color: var(--accent-primary);
+}
+a:hover {
+  color: var(--accent-primary-hover);
 }
 
 h2 {
@@ -117,7 +128,6 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
-  padding: 1rem;
   gap: 1rem;
   width: 100%;
   align-items: stretch;
@@ -270,32 +280,14 @@ button {
   color: var(--text-primary);
 }
 
-.gameDiv {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--surface-primary);
-  padding: 10px;
-  border-radius: 10px;
-  gap: 10px;
-  animation: appear 0.3s ease forwards;
-
-  img {
-    width: auto;
-    height: 250px;
-    border-radius: 10px;
-  }
-}
-
 .projectInfoDiv {
   --color: #ff00ff;
   font-size: 22px;
   padding: 10px;
   border-radius: 10px;
   gap: 10px;
-  width: 13rem;
+  min-width: 13rem;
+  width: fit-content;
   position: relative;
   background: var(--surface-primary);
   color: var(--text-primary);
@@ -326,9 +318,9 @@ button {
   }
 
   img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
   }
 }
 

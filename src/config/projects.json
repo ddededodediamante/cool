@@ -2,7 +2,7 @@
   {
     "url": "https://dde-ext-gallery.vercel.app/",
     "icon": "/icons/ddededodediamante.png",
-    "name": "Extension Gallery",
+    "name": "dde's Extension Gallery",
     "color": "#EB459F"
   },
   {
@@ -22,5 +22,29 @@
     "icon": "https://block-creator.vercel.app/favicon.ico",
     "name": "Block Creator",
     "color": "#9966FF"
+  },
+  {
+    "url": "https://bbtgmoiatfi.vercel.app",
+    "icon": "/icons/game_bbtgmoiatfi.png",
+    "name": "BBTGMOIATFI",
+    "color": "#3B82F6"
+  },
+  {
+    "url": "https://projects.penguinmod.com/9902972982",
+    "icon": "/icons/game_ddesimv2.png",
+    "name": "dde Simulator V2",
+    "color": "#EB459F"
+  },
+  {
+    "url": "https://scratch.mit.edu/projects/719474163",
+    "icon": "/icons/game_physicsplatformer.png",
+    "name": "Physics Underground Platformer",
+    "color": "#3B82F6"
+  },
+  {
+    "url": "/games/snake",
+    "icon": "/icons/game_snake.png",
+    "name": "Snake",
+    "color": "#00FF00"
   }
 ]

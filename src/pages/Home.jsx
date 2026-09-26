@@ -12,6 +12,8 @@ export default function Home() {
 
   return (
     <>
+      <h2>I'm ddededodediamante!</h2>
+      
       <div className="content">
         <div className="info">
           <img src="/icons/ddededodediamante.png" className="pfp" />
