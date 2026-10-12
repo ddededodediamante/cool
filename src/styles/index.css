@@ -30,6 +30,15 @@
   }
 }
 
+.cool-stroke {
+  color: var(--text-primary);
+  text-shadow:
+    -2px 0px 0 var(--text-inverse),
+    2px 0px 0 var(--text-inverse),
+    0 -2px 0 var(--text-inverse),
+    0 2px 0 var(--text-inverse);
+}
+
 .social-button,
 .programming-language {
   transform: scale(0.8);

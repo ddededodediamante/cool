@@ -8,11 +8,11 @@ import {
 } from "../config/stuff.json";
 
 export default function Home() {
-  const [skillsTab, setSkillsTab] = useState("languages");
+  const [skillsTab, setSkillsTab] = useState("programming");
 
   return (
     <>
-      <h2>I'm ddededodediamante!</h2>
+      <h2 className="cool-stroke">I'm ddededodediamante!</h2>
 
       <div className="content">
         <div className="info">
@@ -45,11 +45,11 @@ export default function Home() {
           <div className="skills-tabs">
             <button
               className={
-                "tab-btn" + (skillsTab === "languages" ? " active" : "")
+                "tab-btn" + (skillsTab === "programming" ? " active" : "")
               }
-              onClick={() => setSkillsTab("languages")}
+              onClick={() => setSkillsTab("programming")}
             >
-              💻 Languages
+              💻 Programming
             </button>
             <button
               className={"tab-btn" + (skillsTab === "tools" ? " active" : "")}
@@ -71,7 +71,7 @@ export default function Home() {
             </button>
           </div>
 
-          {skillsTab === "languages" && (
+          {skillsTab === "programming" && (
             <div className="grid-three-elements">
               {programming.used.map((item, index) => (
                 <span
@@ -147,13 +147,18 @@ export default function Home() {
         <div className="info">
           <h2>About Me</h2>
           <p>
-            Hey! I'm a full-stack developer from Argentina 🇦🇷 who loves building
-            websites, games, and Discord bots. I speak Spanish natively and
-            English fluently.
+            Hey there! I'm just a guy that is a developer from Argentina 🇦🇷 that
+            likes building websites, games, and Discord bots. I speak Spanish
+            natively and English fluently.
           </p>
           <p>
-            Outside of coding, I'm a big fan of platformers and incrementals,
-            they're a huge part of why I got into game dev in the first place.
+            I enjoy time with friends and family. I'm in multiple Discord
+            communities, where I like to help people with their problems or just
+            chat.
+          </p>
+          <p>
+            Outside of coding, I'm a big fan of platformers, incrementals and multiplayer games,
+            they're a part of why I got into game dev in the first place.
           </p>
         </div>
       </div>
