@@ -6,7 +6,6 @@ import Snake from "./pages/games/Snake.jsx";
 import RandomNumberGenerator from "./pages/stuff/RandomNumberGenerator.jsx";
 
 import Toolbar from "./components/Toolbar.jsx";
-import Footer from "./components/Footer.jsx";
 import Lore from "./pages/stuff/Lore.jsx";
 
 export function App() {
@@ -23,8 +22,6 @@ export function App() {
           <Lore path="/stuff/lore" />
         </Router>
       </div>
-
-      <Footer />
     </>
   );
 }
