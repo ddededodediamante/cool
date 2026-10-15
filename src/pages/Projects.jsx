@@ -28,7 +28,7 @@ export default function Projects() {
                 Visit
               </a>
               {item.description && (
-                <button onClick={() => toggle(index)}>
+                <button className="primary" onClick={() => toggle(index)}>
                   {current === index ? "-" : "+"}
                 </button>
               )}
