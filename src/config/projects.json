@@ -1,49 +1,58 @@
 [
   {
+    "url": "https://rarry.vercel.app/",
+    "icon": "/icons/rarry.svg",
+    "name": "Rarry",
+    "color": "#3B82F6",
+    "description": "Rarry is a web-based platform that allows to create games or projects using visual block-coding, powered by Blockly."
+  },
+  {
+    "url": "https://nitrobolt.org/",
+    "icon": "/icons/nitrobolt.svg",
+    "name": "NitroBolt",
+    "color": "#FF5726",
+    "description": "A mod of TurboWarp with tons of new features, and a haven for developers who don't want to be restricted by \"compatibility\"."
+  },
+  {
+    "url": "https://block-creator.vercel.app/",
+    "icon": "https://block-creator.vercel.app/favicon.ico",
+    "name": "Block Creator",
+    "color": "#9966FF",
+    "description": "Easily create Blockly blocks using Blockly itself."
+  },
+  {
     "url": "https://dde-ext-gallery.vercel.app/",
     "icon": "/icons/ddededodediamante.png",
     "name": "dde's Extension Gallery",
     "color": "#EB459F"
   },
   {
-    "url": "https://rarry.vercel.app/",
-    "icon": "https://rarry.vercel.app/icons/R-Rarry.svg",
-    "name": "Rarry",
-    "color": "#3B82F6"
-  },
-  {
-    "url": "https://ddechat.vercel.app/",
-    "icon": "https://ddechat.vercel.app/favicon.ico",
-    "name": "ddeChat",
-    "color": "#D67CFF"
-  },
-  {
-    "url": "https://block-creator.vercel.app/",
-    "icon": "https://block-creator.vercel.app/favicon.ico",
-    "name": "Block Creator",
-    "color": "#9966FF"
-  },
-  {
     "url": "https://bbtgmoiatfi.vercel.app",
-    "icon": "/icons/game_bbtgmoiatfi.png",
+    "icon": "/icons/bbtgmoiatfi.png",
     "name": "BBTGMOIATFI",
     "color": "#3B82F6"
   },
   {
+    "url": "https://dde-sim-threed.vercel.app/",
+    "icon": "/icons/ddesim3d.png",
+    "name": "dde Simulator 3D",
+    "color": "#EB459F"
+  },
+  {
     "url": "https://projects.penguinmod.com/9902972982",
-    "icon": "/icons/game_ddesimv2.png",
+    "icon": "/icons/ddesimv2.png",
     "name": "dde Simulator V2",
     "color": "#EB459F"
   },
   {
     "url": "https://scratch.mit.edu/projects/719474163",
-    "icon": "/icons/game_physicsplatformer.png",
+    "icon": "/icons/physicsplatformer.png",
     "name": "Physics Underground Platformer",
     "color": "#3B82F6"
   },
   {
     "url": "/games/snake",
-    "icon": "/icons/game_snake.png",
+    "icon": "/icons/snake.png",
     "name": "Snake",
     "color": "#00FF00"
   }

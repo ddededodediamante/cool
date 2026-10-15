@@ -6,6 +6,7 @@ import {
   tools,
   likedItems
 } from "../config/stuff.json";
+import "./Home.css";
 
 export default function Home() {
   const [skillsTab, setSkillsTab] = useState("programming");

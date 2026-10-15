@@ -1,19 +1,39 @@
+import { useState } from "react";
 import projects from "../config/projects.json";
+import "./Projects.css";
 
 export default function Projects() {
+  const [current, setCurrent] = useState(null);
+
+  function toggle(index) {
+    setCurrent(current === index ? null : index);
+  }
+
   return (
     <div className="infoHolder">
       {projects.map((item, index) => (
         <div
-          class="projectInfoDiv"
+          className="projectInfoDiv inline"
           key={index}
-          style={`--color: ${item.color}`}
+          style={`--color: ${item.color}; ${current === index ? "width: 50%; order: -1" : ""}`}
         >
-          <img src={item.icon} alt="A project's icon" />
-          {item.name}
-          <a href={item.url} target="_blank">
-            Visit
-          </a>
+          <div className="vertical">
+            <img src={item.icon} alt="A project's icon" />
+            {item.name}
+            <div className="inline">
+              <a href={item.url} target="_blank">
+                Visit
+              </a>
+              {item.description && (
+                <button onClick={() => toggle(index)}>
+                  {current === index ? "-" : "+"}
+                </button>
+              )}
+            </div>
+          </div>
+          {item.description && current === index && (
+            <p className="description">{item.description}</p>
+          )}
         </div>
       ))}
     </div>

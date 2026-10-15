@@ -1,0 +1,54 @@
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+  gap: 20px;
+  z-index: 1000;
+  background-color: var(--surface-primary);
+
+  a,
+  img {
+    color: var(--text-primary);
+    background-color: transparent;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dashed var(--border-muted);
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease;
+
+    &:hover {
+      background-color: var(--border-muted);
+      transform: translateY(-2px);
+      color: var(--text-primary);
+    }
+  }
+
+  img {
+    width: 55px;
+    height: 55px;
+    fill: var(--text-primary);
+  }
+}
+
+/* Small Devices */
+
+@media (max-width: 478px) {
+  .toolbar {
+    gap: 10px;
+  }
+}

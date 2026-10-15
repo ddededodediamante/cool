@@ -8,6 +8,8 @@ import RandomNumberGenerator from "./pages/stuff/RandomNumberGenerator.jsx";
 import Toolbar from "./components/Toolbar.jsx";
 import Lore from "./pages/stuff/Lore.jsx";
 
+import "./App.css";
+
 export function App() {
   return (
     <>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Toolbar.css";
 
 export default function Toolbar() {
   const [dark, setDark] = useState(localStorage.getItem("darkMode") === "true");
