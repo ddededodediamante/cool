@@ -34,6 +34,7 @@
   border-radius: 10px;
   gap: 10px;
   min-width: 13rem;
+  max-width: 37rem;
   width: fit-content;
   position: relative;
   background: var(--surface-primary);

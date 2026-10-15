@@ -15,7 +15,10 @@ export default function Projects() {
         <div
           className="projectInfoDiv inline"
           key={index}
-          style={`--color: ${item.color}; ${current === index ? "width: 50%; order: -1" : ""}`}
+          style={`
+            --color: ${item.color};
+            ${current === index ? "width: 100%; min-width: 23rem; order: -1" : ""}
+          `}
         >
           <div className="vertical">
             <img src={item.icon} alt="A project's icon" />
